@@ -108,6 +108,7 @@ nav ul.show {
     width: 100%;
     background-color: #151A2C;
     z-index: 1;
+    height: 100vh;
 }
 
 nav ul.show li {
@@ -218,7 +219,7 @@ main {
     text-align: left;
 }
 
-.heading{
+.heading {
     font-size: 4.2rem;
     font-weight: bold;
     letter-spacing: 0.05em;
@@ -238,7 +239,7 @@ main {
     /* justify-content: space-between; */
     border-top: 1px solid #f1f1f1;
     padding-top: 20px;
-    
+
 }
 
 .parallax-footer p {
@@ -247,13 +248,13 @@ main {
     letter-spacing: 0.05em;
 }
 
-.parallax-ft-left{
+.parallax-ft-left {
     border-right: 1px solid #f1f1f1;
     padding-right: 20px;
     width: 40%;
 }
 
-.parallax-ft-right{
+.parallax-ft-right {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -262,7 +263,7 @@ main {
     padding-left: 20px;
 }
 
-.btn{
+.btn {
     background-color: #E84A43;
     color: #f1f1f1;
     padding: 10px 20px;
@@ -274,19 +275,19 @@ main {
 
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #4d1919;
     color: #E84A43;
     border: 1px solid #E84A43;
 }
 
-.btn a{
+.btn a {
     color: #f1f1f1;
     text-decoration: none;
 }
 
 /* Conference Section */
-.conference{
+.conference {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,7 +295,7 @@ main {
     color: #f1f1f1;
 }
 
-.conf-container{
+.conf-container {
     width: 60%;
     display: flex;
     align-items: center;
@@ -303,7 +304,7 @@ main {
     text-align: left;
 }
 
-.conf-table{
+.conf-table {
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -313,37 +314,37 @@ main {
     border-top: 1px solid #f1f1f1;
 }
 
-.conf-table p{
+.conf-table p {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.conf-tbl-heading{
+.conf-tbl-heading {
     font-weight: bold;
 }
 
-.conf-date{
+.conf-date {
     font-weight: bold;
     padding: 0 30px;
     border-left: 1px solid #f1f1f1;
 }
 
-.conf-time{
+.conf-time {
     font-weight: bold;
     border-left: 1px solid #f1f1f1;
-    padding-left:30px;
+    padding-left: 30px;
 }
 
-.conf-content p{
+.conf-content p {
     font-size: 1rem;
     letter-spacing: 0.5;
     line-height: 1.5;
     margin-top: 2.7rem;
 }
 
-.conf-footer{
+.conf-footer {
     margin-top: 2.7rem;
     font-size: 1.5rem;
     letter-spacing: 0.5;
@@ -351,18 +352,17 @@ main {
     flex-direction: row;
 }
 
-.conf-footer a{
+.conf-footer a {
     color: #f1f1f1;
     text-decoration: none;
     padding-left: 5px;
-    display: flex
-    ;
+    display: flex;
     flex-direction: row;
     align-self: center;
     justify-content: center;
 }
 
-.conf-footer p{
+.conf-footer p {
     margin-top: 0;
     padding-left: 10px;
     letter-spacing: 0.5;
@@ -370,7 +370,7 @@ main {
     font-weight: bold;
 }
 
-.conf-footer i{
+.conf-footer i {
     margin-top: 0;
     padding-top: 8px;
     letter-spacing: 0.5;
@@ -384,6 +384,7 @@ main {
     overflow: hidden;
 }
 
+/* 
 .about .parallax-container {
     position: relative;
     height: 100%;
@@ -415,11 +416,82 @@ main {
     position: relative;
     z-index: 1;
     color: #f1f1f1;
-    padding: 50px; /* Adjust the padding as needed */
-    margin: 0 auto; /* Center the content */
+    padding: 50px; 
+    margin: 0 auto;
+}*/
+
+
+.about-parallax-container {
+    position: relative;
+    height: 170vh;
+    overflow: hidden;
 }
 
+.about-parallax-image {
+    background-image: url('./assets/images/about_image.webp');
+    background-size: cover;
+    object-fit: bottom;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+}
 
+.about-parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    color: #f1f1f1;
+    width: 60%;
+    /* border: 1px solid #f1f1f1; */
+    padding: 20px;
+    z-index: 1;
+}
 
+.about.scrolled .animated-text {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+.about.scrolled .about-parallax-image {
+    /* transform: translateY(-50%); */
+}
 
+.about-parallax-header {
+    /* font-size: 50px; */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.about-parallax-header h1 {
+    font-size: 4.2rem;
+    margin-bottom: 48px;
+}
+
+.line {
+    background-color: #f1f1f1;
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.about-parallax-content h2 {
+    margin-bottom: 48px;
+}
+
+.about-parallax-content p {
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 0.08em;
+}

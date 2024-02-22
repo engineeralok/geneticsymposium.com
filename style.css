@@ -384,43 +384,6 @@ main {
     overflow: hidden;
 }
 
-/* 
-.about .parallax-container {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-}
-
-.about .parallax-image {
-    background-image: url('./assets/images/hero_image.webp');
-    background-size: cover;
-    object-fit: top;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    transform: translateZ(0);
-}
-
-.about-container {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-    position: relative;
-    z-index: 1;
-    color: #f1f1f1;
-    padding: 50px; 
-    margin: 0 auto;
-}*/
-
-
 .about-parallax-container {
     position: relative;
     height: 170vh;
@@ -494,4 +457,72 @@ main {
     font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 0.08em;
+}
+
+.grid-section {
+    background-color: #E84A43;
+    height: 350px;
+
+}
+
+.square-section {
+    height: 350px;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #cfcdcdcb; */
+    border-left: 1px solid #ED746E;
+    border-bottom: 1px solid #ED746E;
+    background-color: transparent;
+    position: absolute;
+}
+
+.square-text {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+
+.grid-box h2{
+    font-size: 4.0rem;
+    padding: 0 20px;
+}
+
+.grid-box p{
+    font-size: 1.8rem;
+    font-weight: lighter;
+    font-family: serif;
+    padding:0 20px;
+    border-right: 1px solid #f1f1f1;
+    border-left: 1px solid #f1f1f1;
 }

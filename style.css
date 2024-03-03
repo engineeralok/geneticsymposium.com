@@ -500,7 +500,7 @@ main {
     justify-content: center;
 }
 
-.grid-container{
+.grid-container {
     position: relative;
     z-index: 1;
     display: flex;
@@ -513,21 +513,21 @@ main {
 }
 
 
-.grid-box h2{
+.grid-box h2 {
     font-size: 4.0rem;
     padding: 0 20px;
 }
 
-.grid-box p{
+.grid-box p {
     font-size: 1.8rem;
     font-weight: lighter;
     font-family: serif;
-    padding:0 20px;
+    padding: 0 20px;
     border-right: 1px solid #f1f1f1;
     border-left: 1px solid #f1f1f1;
 }
 
-.speakers{
+.speakers {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -536,15 +536,15 @@ main {
     background-color: #151A2C;
 }
 
-.speakers-container{
+.speakers-container {
     width: 60%;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
 }
 
-.speaker-images-container{
+.speaker-images-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -552,46 +552,52 @@ main {
     gap: 30px;
 }
 
-.speaker-container h1{
+.speaker-container h1 {
     font-size: 4.0rem;
     font-weight: 900;
-    letter-spacing:  0.08em;
+    letter-spacing: 0.08em;
     color: #f1f1f1;
     margin-bottom: 3rem;
 }
 
-.speaker-container p{
+.speaker-container p {
     font-size: 1.8rem;
-    letter-spacing:  0.08em;
+    letter-spacing: 0.08em;
     font-weight: bold;
     color: #f1f1f1;
     margin-bottom: 60px;
     margin-top: 20px;
 }
 
-.speaker-images-container img{
+.speaker-images-container img {
     width: 230px;
     height: 310px;
+    object-fit: cover;
     transition: ease 0.4s;
 }
 
-.speaker-images-container img:hover{
+.speaker-images {
+    width: 230px;
+    text-transform: capitalize;
+}
+
+.speaker-images-container img:hover {
     transform: scale(0.98);
 }
 
-.speaker-images-container h2{
+.speaker-images-container h2 {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #f1f1f1;
     margin-top: 10px;
 }
 
-.speaker-images-container p{
+.speaker-images-container p {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: lighter;
     color: #f1f1f1;
     margin-top: 5px;
+    text-transform: capitalize;
 }
-

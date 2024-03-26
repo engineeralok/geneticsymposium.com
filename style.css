@@ -547,7 +547,7 @@ main {
 .speaker-images-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     gap: 30px;
 }
